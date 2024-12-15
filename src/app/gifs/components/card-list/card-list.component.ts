@@ -1,6 +1,5 @@
-import { Component } from '@angular/core';
-import {Card} from "../../interfaces/card.interface";
-
+import {Component, Input} from '@angular/core'
+import {Gif} from "../../interfaces/gifs.interfaces";
 
 @Component({
   selector: 'gifs-card-list',
@@ -9,9 +8,7 @@ import {Card} from "../../interfaces/card.interface";
 })
 export class CardListComponent {
 
-  public cardList: Card[] = [{
-    title: 'Title Card',
-    url: 'https://files.cdn.thinkific.com/profiles/102/451/7231705324963.medium.jpeg',
-  }]
+  @Input()
+  public gifs: Gif[] = [];
 
 }

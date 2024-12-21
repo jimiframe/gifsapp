@@ -12,10 +12,10 @@ import {SearchBoxComponent} from "./components/search-box/search-box.component";
 
 @NgModule({
   declarations: [
+    CardComponent,
+    CardListComponent,
     HomePageComponent,
     SearchBoxComponent,
-    CardListComponent,
-    CardComponent
   ],
   exports: [
     HomePageComponent
